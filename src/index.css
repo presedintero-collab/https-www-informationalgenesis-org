@@ -8,35 +8,57 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Informational Genesis — Celestial Library design system.
+       Deep cosmic dark, gold accents, ivory text. All colors HSL. */
+    --background: 232 45% 5%;
+    --foreground: 40 32% 92%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 232 40% 8%;
+    --card-foreground: 40 32% 92%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 232 45% 6%;
+    --popover-foreground: 40 32% 92%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 42 58% 62%;            /* refined gold */
+    --primary-foreground: 232 50% 6%;
+    --primary-glow: 44 78% 72%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 234 35% 14%;
+    --secondary-foreground: 40 28% 88%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 233 28% 12%;
+    --muted-foreground: 40 14% 68%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 248 40% 22%;
+    --accent-foreground: 40 32% 92%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 40 32% 92%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 235 25% 18%;
+    --input: 235 25% 18%;
+    --ring: 42 58% 62%;
 
-    --radius: 0.5rem;
+    --ivory: 40 32% 92%;
+    --gold: 42 58% 62%;
+    --gold-soft: 42 45% 55%;
+    --midnight: 232 45% 5%;
+    --indigo-deep: 245 50% 10%;
+    --violet-deep: 260 40% 14%;
+
+    --gradient-cosmic: radial-gradient(ellipse at top, hsl(245 50% 14% / 0.9), hsl(232 45% 5%) 60%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 58% 62%), hsl(36 50% 48%));
+    --gradient-gold-soft: linear-gradient(180deg, hsl(42 58% 62% / 0.18), hsl(42 58% 62% / 0));
+    --gradient-volume: linear-gradient(160deg, hsl(245 50% 14%), hsl(232 45% 7%) 60%, hsl(260 40% 10%));
+    --gradient-divider: linear-gradient(90deg, transparent, hsl(42 58% 62% / 0.5), transparent);
+
+    --shadow-glow: 0 0 60px hsl(42 58% 62% / 0.18);
+    --shadow-volume: 0 30px 80px -40px hsl(0 0% 0% / 0.9), 0 0 0 1px hsl(42 58% 62% / 0.12);
+    --shadow-gold-btn: 0 10px 30px -10px hsl(42 58% 62% / 0.5), 0 0 0 1px hsl(42 58% 62% / 0.3) inset;
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +78,25 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --background: 232 45% 5%;
+    --foreground: 40 32% 92%;
+    --card: 232 40% 8%;
+    --card-foreground: 40 32% 92%;
+    --popover: 232 45% 6%;
+    --popover-foreground: 40 32% 92%;
+    --primary: 42 58% 62%;
+    --primary-foreground: 232 50% 6%;
+    --secondary: 234 35% 14%;
+    --secondary-foreground: 40 28% 88%;
+    --muted: 233 28% 12%;
+    --muted-foreground: 40 14% 68%;
+    --accent: 248 40% 22%;
+    --accent-foreground: 40 32% 92%;
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 40 32% 92%;
+    --border: 235 25% 18%;
+    --input: 235 25% 18%;
+    --ring: 42 58% 62%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +114,72 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'EB Garamond', 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: 0.005em;
   }
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'Cormorant Garamond', 'EB Garamond', Georgia, serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+
+  .font-display { font-family: 'Cormorant Garamond', serif; }
+  .font-serif   { font-family: 'EB Garamond', serif; }
+  .font-sans-ui { font-family: 'Inter', system-ui, sans-serif; letter-spacing: 0.18em; }
 }
+
+@layer utilities {
+  .text-ivory { color: hsl(var(--ivory)); }
+  .text-gold  { color: hsl(var(--gold)); }
+  .bg-cosmic  { background: var(--gradient-cosmic); }
+  .bg-volume  { background: var(--gradient-volume); }
+  .shadow-glow   { box-shadow: var(--shadow-glow); }
+  .shadow-volume { box-shadow: var(--shadow-volume); }
+  .divider-gold {
+    height: 1px;
+    background: var(--gradient-divider);
+  }
+  .text-gradient-gold {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .starfield {
+    background-image:
+      radial-gradient(1px 1px at 12% 18%, hsl(40 30% 92% / 0.7), transparent 60%),
+      radial-gradient(1px 1px at 28% 62%, hsl(40 30% 92% / 0.5), transparent 60%),
+      radial-gradient(1.2px 1.2px at 47% 22%, hsl(42 60% 80% / 0.8), transparent 60%),
+      radial-gradient(1px 1px at 65% 78%, hsl(40 30% 92% / 0.5), transparent 60%),
+      radial-gradient(1px 1px at 78% 36%, hsl(40 30% 92% / 0.6), transparent 60%),
+      radial-gradient(1.5px 1.5px at 88% 70%, hsl(42 60% 80% / 0.7), transparent 60%),
+      radial-gradient(1px 1px at 8% 84%, hsl(40 30% 92% / 0.5), transparent 60%),
+      radial-gradient(1px 1px at 55% 50%, hsl(40 30% 92% / 0.4), transparent 60%),
+      radial-gradient(1px 1px at 35% 92%, hsl(40 30% 92% / 0.5), transparent 60%),
+      radial-gradient(1.2px 1.2px at 72% 10%, hsl(42 60% 80% / 0.7), transparent 60%);
+  }
+  .nebula-glow {
+    background:
+      radial-gradient(ellipse at 20% 30%, hsl(248 60% 30% / 0.35), transparent 55%),
+      radial-gradient(ellipse at 80% 70%, hsl(42 58% 50% / 0.18), transparent 55%);
+  }
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.55; }
+    50%      { opacity: 1; }
+  }
+  .animate-twinkle { animation: twinkle 6s ease-in-out infinite; }
+  @keyframes float-slow {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+  .animate-float-slow { animation: float-slow 9s ease-in-out infinite; }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-up { animation: fade-up 1s var(--transition-smooth) both; }
+  }
+
