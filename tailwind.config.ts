@@ -19,6 +19,15 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        gold: {
+          DEFAULT: "hsl(var(--gold))",
+          soft: "hsl(var(--gold-soft))",
+          glow: "hsl(var(--primary-glow))",
+        },
+        ivory: "hsl(var(--ivory))",
+        midnight: "hsl(var(--midnight))",
+        "indigo-deep": "hsl(var(--indigo-deep))",
+        "violet-deep": "hsl(var(--violet-deep))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -57,6 +66,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      fontFamily: {
+        display: ["'Cormorant Garamond'", "serif"],
+        serif: ["'EB Garamond'", "Georgia", "serif"],
+        ui: ["'Inter'", "system-ui", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
